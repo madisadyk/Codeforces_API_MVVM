@@ -1,6 +1,6 @@
 package com.madisadyk.codeforcesapimvvm.models
 
-data class HandlerResponse(
+data class HandleResponse(
     val result: List<CFHandler>,
     val status: String
 )
