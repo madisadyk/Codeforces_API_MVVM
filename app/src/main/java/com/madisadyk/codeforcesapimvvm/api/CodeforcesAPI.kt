@@ -8,10 +8,10 @@ import retrofit2.http.Query
 
 interface CodeforcesAPI {
 
-    @GET("contest.list")
+    @GET("api/contest.list")
     suspend fun getContests(): Response<ContestsResponse>
 
-    @GET("user.info")
+    @GET("api/user.info")
     suspend fun getHandler(
         @Query("handles")
         handles: String = "varlokmaker"
