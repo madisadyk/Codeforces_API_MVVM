@@ -8,4 +8,6 @@
     <string name="rank">Rank</string>
     <string name="name">Name</string>
     <string name="rating">Rating</string>
+    <string name="before_start">Before start</string>
+    <string name="length">Length</string>
 </resources>

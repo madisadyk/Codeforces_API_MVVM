@@ -1,6 +1,5 @@
 package com.madisadyk.codeforcesapimvvm.adapters
 
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -46,8 +45,9 @@ class HandleAdapter : RecyclerView.Adapter<HandleAdapter.HandleViewHolder>() {
 
     override fun onBindViewHolder(holder: HandleViewHolder, position: Int) {
         val handle = differ.currentList[position]
+        val imgUrl = "https:" + handle.titlePhoto
         holder.itemView.apply {
-            Glide.with(this).asBitmap().load(handle.titlePhoto).centerCrop().into(handlerImgIV)
+            Glide.with(this).load(imgUrl).into(handlerImgIV)
             handlerRankTV.text = handle.rank
             handlerTV.text = handle.handle
             ratingTV.text = handle.rating.toString() + " (max. " + handle.maxRank + ", " + handle.maxRating +")"

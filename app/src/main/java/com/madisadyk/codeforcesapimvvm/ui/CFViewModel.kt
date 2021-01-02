@@ -19,7 +19,7 @@ class CFViewModel(
     val search: MutableLiveData<Resource<HandleResponse>> = MutableLiveData()
 
     init {
-//        getContests()
+        getContests()
     }
 
     fun getContests() = viewModelScope.launch {
